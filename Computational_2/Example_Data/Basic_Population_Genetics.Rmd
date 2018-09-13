@@ -49,9 +49,9 @@ There are other estimators of Fst that account for various data changes, ex: Wei
 wc(fstnancycats) #Weir and Cockerham's estimates of Fst and Fis
 ```
 
-What if you wanted to compare Fst values for each population against each other population? You might want to do this if you want to find populations that may be more highly differentiated from others.
+What if you wanted to compare Fst values for each population against each other population? You might want to do this if you want to find populations that may be more highly differentiated from others. NEEDS A GENIND OBJECT!
 ```{r}
-pairwise <- pairwise.fst(nancycats, res.type = "matrix") #make a matrix comparing every population with every other population
+pairwise <- pairwise.fst(nancycats, res.type = "matrix") #make a matrix comparing every population with every other population, this requires a GENIND  OBJECT!
 pairwise
 ```
 
